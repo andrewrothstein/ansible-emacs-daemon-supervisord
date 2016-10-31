@@ -21,5 +21,7 @@ galaxy_info:
     - supervisord
 
 dependencies:
+  - role: andrewrothstein.emacs
+    version: v1.0.4
   - role: andrewrothstein.supervisord-program
 
