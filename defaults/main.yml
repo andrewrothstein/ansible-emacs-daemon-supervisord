@@ -7,4 +7,4 @@ supervisord_program_command: >-
   /bin/su {{emacs_daemon_supervisord_user}} -l
   -c emacs -- -daemon -u {{emacs_daemon_supervisord_user}}
 
-
+supervisord_program_autorestart: true
