@@ -1,2 +1,10 @@
 ---
-# defaults file for sshd-supervisord
+# defaults file for emacs-daemon-supervisord
+emacs_daemon_supervisord_user: root
+
+supervisord_program_name: emacs-daemon
+supervisord_program_command: >-
+  /bin/su {{emacs_daemon_supervisord_user}} -l
+  -c emacs -- -daemon -u {{emacs_daemon_supervisord_user}}
+
+
