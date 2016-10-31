@@ -22,9 +22,4 @@ galaxy_info:
 
 dependencies:
   - role: andrewrothstein.supervisord-program
-    supervisord_program_name: emacsdaemon
-    supervisord_program_autorestart: true
-    supervisord_program_command: >-
-      /bin/su {{emacs_daemon_supervisord_user}} -l
-      -c emacs -- -daemon -u {{emacs_daemon_supervisord_user}}
 
