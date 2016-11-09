@@ -24,4 +24,5 @@ dependencies:
   - role: andrewrothstein.emacs
     version: v1.0.4
   - role: andrewrothstein.supervisord-program
+    version: v1.0.0
 
