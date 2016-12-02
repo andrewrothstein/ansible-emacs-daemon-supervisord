@@ -16,13 +16,16 @@ galaxy_info:
     - name: Ubuntu
       versions:
         - all
+    - name: Alpine
+      versions:
+        - edge
   galaxy_tags:
     - emacs
     - supervisord
 
 dependencies:
   - role: andrewrothstein.emacs
-    version: v1.0.4
+    version: v1.0.5
   - role: andrewrothstein.supervisord-program
     version: v1.0.2
 
