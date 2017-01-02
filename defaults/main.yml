@@ -1,4 +1,2 @@
 ---
 # defaults file for emacs-daemon-supervisord
-supervisord_program_name: emacs-daemon
-supervisord_program_command: emacs -daemon

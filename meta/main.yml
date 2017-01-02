@@ -25,8 +25,13 @@ galaxy_info:
 
 dependencies:
   - role: andrewrothstein.emacs
-    version: v1.0.5
+    version: v2.0.0
+  - role: andrewrothstein.emacs-config
+    version: v1.0.0
   - role: andrewrothstein.supervisord-program
-    version: v1.0.2
+    version: v1.0.3
+    supervisord_program_name: emacs-daemon
+    supervisord_program_command: emacs -daemon
+
 
 
