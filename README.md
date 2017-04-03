@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-emacs-daemon-supervisord.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-emacs-daemon-supervisord)
 andrewrothstein.emacs-daemon-supervisord
 =========
 
@@ -21,10 +22,12 @@ See [meta/main.yml](meta/main.yml)
 Example Playbook
 ----------------
 
-    - hosts: servers
-      roles:
-	     - andrewrothstein.supervisord
-         - andrewrothstein.emacs-daemon-supervisord
+```yml
+- hosts: servers
+  roles:
+    - andrewrothstein.supervisord
+    - andrewrothstein.emacs-daemon-supervisord
+```
 
 License
 -------
@@ -34,4 +37,4 @@ MIT
 Author Information
 ------------------
 
-Andrew Rothstein andrew.rothstein@gmail.com
+Andrew Rothstein <andrew.rothstein@gmail.com>
