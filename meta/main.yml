@@ -29,6 +29,6 @@ dependencies:
   - role: andrewrothstein.emacs-config
     version: v1.0.2
   - role: andrewrothstein.supervisord-program
-    version: v1.0.3
+    version: v1.0.4
     supervisord_program_name: emacs-daemon
     supervisord_program_command: emacs -daemon
