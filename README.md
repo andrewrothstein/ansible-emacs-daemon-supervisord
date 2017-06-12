@@ -1,6 +1,6 @@
-[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-emacs-daemon-supervisord.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-emacs-daemon-supervisord)
 andrewrothstein.emacs-daemon-supervisord
 =========
+[![Build Status](https://travis-ci.org/andrewrothstein/ansible-emacs-daemon-supervisord.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-emacs-daemon-supervisord)
 
 Installs a supervisord program specification for an emacs daemon
 

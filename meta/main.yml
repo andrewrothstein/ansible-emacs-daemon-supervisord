@@ -7,27 +7,31 @@ galaxy_info:
     - MIT
   min_ansible_version: 2.0
   platforms:
-    - name: EL
-      versions:
-        - all
     - name: Fedora
       versions:
-        - all
+        - 23
+        - 24
+        - 25
     - name: Ubuntu
       versions:
-        - all
+        - xenial
     - name: Alpine
       versions:
-        - all
+        - '3.5'
+        - '3.6'
+        - edge
+    - name: Debian
+      versions:
+        - jessie
   galaxy_tags:
     - emacs
     - supervisord
 
 dependencies:
   - role: andrewrothstein.emacs
-    version: v2.0.1
+    version: v2.0.3
   - role: andrewrothstein.emacs-config
-    version: v1.0.2
+    version: v1.0.3
   - role: andrewrothstein.supervisord-program
     version: v1.0.4
     supervisord_program_name: emacs-daemon
