@@ -33,11 +33,8 @@ before_install:
 script:
   - >-
     dcb
-    --snippetsdir .
-    --snippet from.j2 ansible-playbook.j2
     --upstreamgroup andrewrothstein
-    --upstreamapp docker-supervisord
-    --pull ${OS}
+    --upstreamapp docker-ansible-role
     --write ${OS}
     --build ${OS}
     --push ${OS}
