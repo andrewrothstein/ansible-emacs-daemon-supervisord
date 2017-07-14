@@ -28,11 +28,11 @@ galaxy_info:
     - supervisord
 
 dependencies:
-  - role: andrewrothstein.emacs
+  - src: andrewrothstein.emacs
     version: v2.0.3
-  - role: andrewrothstein.emacs-config
+  - src: andrewrothstein.emacs-config
     version: v1.0.3
-  - role: andrewrothstein.supervisord-program
+  - src: andrewrothstein.supervisord-program
     version: v1.0.4
     supervisord_program_name: emacs-daemon
     supervisord_program_command: emacs -daemon
