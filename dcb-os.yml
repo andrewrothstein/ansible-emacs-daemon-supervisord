@@ -1,0 +1,9 @@
+- alpine_3.5
+- alpine_3.6
+- alpine_3.7
+- alpine_edge
+- debian_jessie
+- fedora_23
+- fedora_24
+- fedora_25
+- ubuntu_xenial
