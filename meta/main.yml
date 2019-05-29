@@ -1,38 +1,36 @@
----
+dependencies:
+- role: andrewrothstein.emacs
+  version: v2.0.3
+- role: andrewrothstein.emacs-config
+  version: v1.0.3
+- role: andrewrothstein.supervisord-program
+  supervisord_program_command: emacs -daemon
+  supervisord_program_name: emacs-daemon
+  version: v1.1.3
 galaxy_info:
   author: Andrew Rothstein
-  description: installs supervisord conf for emacs daemon
   company: BlackRock
+  description: installs supervisord conf for emacs daemon
+  galaxy_tags:
+  - emacs
+  - supervisord
   license:
-    - MIT
+  - MIT
   min_ansible_version: 2.0
   platforms:
-    - name: Fedora
-      versions:
-        - 23
-        - 24
-        - 25
-    - name: Ubuntu
-      versions:
-        - xenial
-    - name: Alpine
-      versions:
-        - '3.5'
-        - '3.6'
-        - edge
-    - name: Debian
-      versions:
-        - jessie
-  galaxy_tags:
-    - emacs
-    - supervisord
-
-dependencies:
-  - src: andrewrothstein.emacs
-    version: v2.0.3
-  - src: andrewrothstein.emacs-config
-    version: v1.0.3
-  - src: andrewrothstein.supervisord-program
-    version: v1.0.4
-    supervisord_program_name: emacs-daemon
-    supervisord_program_command: emacs -daemon
+  - name: Fedora
+    versions:
+    - 23
+    - 24
+    - 25
+  - name: Ubuntu
+    versions:
+    - xenial
+  - name: Alpine
+    versions:
+    - '3.5'
+    - '3.6'
+    - edge
+  - name: Debian
+    versions:
+    - jessie
